@@ -12,8 +12,13 @@ def knapsack(W, wt, val, n):
     return K[n][W] 
   
 # inputs
-val = [80000, 110000, 150000, 200000] # prices
-wt = [5, 7, 9, 13] # weights
-W = 26 # maximum weight of knapsack
-n = len(val) 
-print(knapsack(W, wt, val, n))   
+prices = []
+weights = []
+max_weight = int(input("Input the maximum weight of the knapsack: "))
+num_items = int(input("Input the number of items: "))
+for i in range(items):
+  x = int(input("Input the price of item: "))
+  y = int(input("Input the weight of item: "))
+  prices.append(x)
+  weights.append(y)
+print(knapsack(max_weight, weights, prices, num_items)
